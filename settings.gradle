@@ -1,0 +1,5 @@
+rootProject.name = 'Notes'
+include 'client'
+include 'network'
+include 'server'
+

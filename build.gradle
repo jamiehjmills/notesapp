@@ -1,0 +1,25 @@
+allprojects {
+    group 'org.example'
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+
+    apply plugin: 'java-library'
+    apply plugin: 'jacoco'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+    jacoco {
+        toolVersion = "0.8.5"
+        reportsDir = file("$buildDir/customJacocoReportDir")
+    }
+
+}
+
+//dependencies {
+//    testCompile group: 'junit', name: 'junit', version: '4.12'
+//}
