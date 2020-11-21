@@ -2,9 +2,11 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppController">
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppController">
    <children>
+      <Rectangle arcHeight="1.0" arcWidth="5.0" fill="#90b7dd" height="49.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
       <MenuBar prefHeight="26.0" prefWidth="600.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
@@ -24,8 +26,6 @@
           </Menu>
         </menus>
       </MenuBar>
-      <ScrollBar layoutX="451.0" layoutY="25.0" orientation="VERTICAL" prefHeight="575.0" prefWidth="14.0" />
-      <Button mnemonicParsing="false" text="Button" />
-      <Button fx:id="creating" layoutX="490.0" layoutY="44.0" mnemonicParsing="false" onAction="#creatingNotes" prefHeight="34.0" prefWidth="78.0" text="+" />
+      <Button fx:id="creating" layoutX="14.0" layoutY="36.0" mnemonicParsing="false" onAction="#creatingNotes" prefHeight="26.0" prefWidth="40.0" text="+" />
    </children>
 </AnchorPane>
