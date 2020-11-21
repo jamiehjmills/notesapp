@@ -10,34 +10,31 @@ public class AppController {
     private AnchorPane root;
     private int yPosition, xPosition  = 0; // x and y positions for the notes
     private boolean postingNotes = true;
+    private int box = 0; // this is only for testing
 
     @FXML
     public void creatingNotes(ActionEvent event){
-
-        System.out.println("testing = ok");
-
+        
         double[] y = {93,262,432};
         double[] x = {34, 224, 412};
 
         if (postingNotes) {
             notes(140,140,x[xPosition],y[yPosition]);
             xPosition++;
-        };
+            box++; // this is only for testing
+            System.out.println("Number of note: "+ box); //total 9 notes are made after that it cannot create anymore
+        }
 
-        if (xPosition >= 3){
+        if (xPosition > 2 && yPosition < 2) {
             yPosition++;
             xPosition = 0;
-        }
-
-        if (yPosition >= 2 && xPosition >= 3 ){
-            postingNotes= false;
+        }else if (xPosition > 2 && yPosition >= 2){
             yPosition = 0;
             xPosition = 0;
-
+            postingNotes = false;
         }
-
-
     }
+
 
     public void notes(double width, double height, double x, double y){
 

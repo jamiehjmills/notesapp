@@ -6,8 +6,8 @@ import javafx.stage.Stage;
 
 public class App extends Application {
 
-    private int appWidth = 600;
-    private int appHeight = 600;
+    private final int appWidth = 600;
+    private final int appHeight = 600;
 
     @Override
     public void start(Stage stage) throws Exception {
