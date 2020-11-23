@@ -14,7 +14,7 @@ public class AppController {
 
     @FXML
     public void creatingNotes(ActionEvent event){
-        
+
         double[] y = {93,262,432};
         double[] x = {34, 224, 412};
 
