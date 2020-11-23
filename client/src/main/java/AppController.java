@@ -35,7 +35,6 @@ public class AppController {
         }
     }
 
-
     public void notes(double width, double height, double x, double y){
 
         Rectangle r = new Rectangle();
@@ -47,5 +46,6 @@ public class AppController {
         root.getChildren().add(r);
 
     }
-
 }
+
+
