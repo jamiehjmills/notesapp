@@ -55,17 +55,7 @@ public class AppController {
         listPostion++;
     }
 
-//    public void notes(double width, double height, double x, double y){
-//
-//        Rectangle r = new Rectangle();
-//        r.setX(x);
-//        r.setY(y);
-//        r.setWidth(width);
-//        r.setHeight(height);
-//        r.setFill(Color.LIGHTGRAY);
-//        root.getChildren().add(r);
-//
-//    }
+
 }
 
 
