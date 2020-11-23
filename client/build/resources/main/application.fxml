@@ -27,15 +27,5 @@
         </menus>
       </MenuBar>
       <Button fx:id="creating" layoutX="14.0" layoutY="36.0" mnemonicParsing="false" onAction="#creatingNotes" prefHeight="26.0" prefWidth="40.0" text="+" />
-      <TilePane layoutX="100.0" layoutY="158.0" prefHeight="200.0" prefWidth="200.0" />
-      <TitledPane animated="false" layoutX="34.0" layoutY="106.0" text="untitled">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-               <children>
-                  <TextArea prefHeight="176.0" prefWidth="200.0" />
-               </children>
-            </AnchorPane>
-        </content>
-      </TitledPane>
    </children>
 </AnchorPane>
